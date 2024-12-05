@@ -10,20 +10,35 @@
     <link rel="stylesheet" href="style1.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Destination Tour</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Login</a></li>
-                <li><a href="#">Sign up</a></li>
-            </ul>
-        </nav>
-        <h1>Get started your exciting journey with us.</h1>
-    </header>
+  <div class="page-wrapper">
 
+  <header>
+    <nav class="navbar">
+        <!-- Logo Section -->
+        <div class="logo">
+          <span>Trabook</span>
+          <img src="Vector.png" alt="Trabook Icon" class="logo-icon">
+      </div>
+
+        <!-- Navigation Links -->
+        <ul class="nav-items">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Destination</a></li>
+            <li><a href="#">Tour</a></li>
+            <li><a href="#">Blog</a></li>
+        </ul>
+
+        <!-- Authentication Links -->
+        <div class="auth-links">
+            <a href="#" class="login">Login</a>
+            <a href="#" class="signup">Sign Up</a>
+        </div>
+    </nav>
+</header>
+
+<!-- Hero Content -->
+ 
     <section class="hero">
         <div class="hero-content">
             <h2>Best Tour Awards</h2>
@@ -34,8 +49,13 @@
             </div>
             <a href="#" class="button">Discover Now</a>
         </div>
+        <div class="hero-image">
+          <img src="image.png" alt="Travel image">
+      </div>
     </section>
 
+
+<!-- Explore Section -->
     <section class="explore">
         <h2>Explore Now</h2>
         <div class="explore-item">
@@ -348,6 +368,6 @@
           </div>
         </div>
       </footer>
-
+    </div>
 </body>
 </html>

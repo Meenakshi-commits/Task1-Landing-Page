@@ -394,131 +394,310 @@ color:#FA7436
 
 
 
+/* Container1 Styling */
+.container1 {
+   display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%; 
+  max-width: 1400px; 
+  padding: 1rem 2rem 1rem 2rem;
+  }
+/* Header */
+.header1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem; 
+  background-color: #f9f9f9;
+  border-radius: 4px;
+  width: 100%; 
+  max-width: 1200px; 
+  margin: 3rem auto; 
+  overflow: hidden;  
+ 
+}
 
-    .container1 {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding:   
-   40px;
-    text-align: center;
-  }
-  .container1 h2 {
-    font-size: 36px;
-    font-weight: bold;
-    color: #333;
-  }
+.content {
+  text-align: center; 
+  margin: 0 auto; 
+  max-width: 600px; 
+  flex: 1;
+}
 
-  .container1 p {
-    font-size: 18px;
-    color: #666;
-    margin-bottom: 20px;
-  }
-  .card-container1 {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 40px;
-  }
-  
-  .card1 {
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    padding: 30px;
-    text-align: center;
-    width: 23%;
-  }
-  .card1 img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 10px 10px 0 0;
-    margin-bottom: 20px;
-  }
-  
-  .card1 h3 {
-    font-size: 24px;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 10px;
-  }
-  
-  .card1 p {
-    color: #666;
-    margin-bottom: 10px;
-  }
-  
-  .rating1 {
-    color: #ff9900;
-    margin-bottom: 10px;
-  }
-  
-  .price {
-    font-size: 18px;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 20px;
-  }
+.content h1 {
+  font-family: "Volkhov", serif;
+  font-weight: bold;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #222222;
+  text-align: center; 
+  margin-bottom: 0.5rem;
+}
+.highlight1
+{
+color:#FA7436
+}
+.content p {
+  font-family: 'Poppins', sans-serif;
+  color: #666666;
+  font-size: 15px;
+  text-align: center;
+  word-wrap: break-word;
+  line-height: 1.4;
+  margin: 0; 
+  padding: 0; 
+}
+
+/* Card container */
+.card1-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: -40px;
+  margin-left: -40px;
+  position: relative;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+
+/* Cards */
+.card1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #f9f9f9;
+  border-radius: 4px;
+  padding: 1rem;
+  width: 160px;
+  position: relative; 
+}
+
+.card1 img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+.card1 h3 {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  color: #333;
+  font-family: 'Poppins', sans-serif;
+}
+
+.card1 p {
+  font-size: 0.6rem;
+  font-family: 'Poppins', sans-serif;
+  color: #666666;
+  position: absolute;
+  bottom: 10px;
+  left: 15px;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+/* Rating */
+.rating {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  margin: 10px 0;
+}
+
+.rating span {
+  font-size: 0.9rem;
+  color: #333;
+  margin-left: 5px;
+}
+
+.rating img {
+  width: 10px;
+  height: 10px;
+}
+
+/* Price */
+.price {
+  margin: 10px 0;
+}
+
+.old-price {
+  text-decoration: line-through;
+  color: #888;
+  font-size: 0.8rem;
+}
+
+.new-price {
+  color: #FA7436;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+/* Apply a dark fade effect (night effect) to the second image only */
+.card1:nth-child(2) .imag {
+  position: relative; /* Ensure the overlay can be positioned inside this container */
+}
+
+.card1:nth-child(2) .imag img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  object-fit: cover;
+  filter: brightness(0.9); /* Darken the image to create the night effect */
+}
+
+/* Dark overlay effect on the image only */
+.card1:nth-child(2) .imag::after {
+  content: ''; /* Create a pseudo-element */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* Dark semi-transparent overlay */
+  border-radius: 4px;
+  z-index: 1; /* Make sure the overlay is on top of the image */
+}
+
+/* Book Now button - keeps the button visible and clickable */
+.card1:nth-child(2) .book-now {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(250, 116, 54, 0.8); /* Semi-transparent orange button */
+  color: white;
+  padding: 10px 20px;
+  font-size: 0.9rem;
+  border-radius: 4px;
+  cursor: pointer;
+  z-index: 2; /* Ensure the button is above the overlay */
+  text-align: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
 
 
+/*container2*/
 
   .container2 {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding:   
-   40px;
-    text-align: center;
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%; 
+  max-width: 1400px; 
+  padding: 1rem 2rem 1rem 2rem;
+  }
+  .top-card1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem; 
+    background-color: #f9f9f9;
+    border-radius: 4px;
+    width: 100%; 
+    max-width: 1200px; 
+    margin: 3rem auto; 
+    overflow: hidden; 
+    
   }
   
-  .container2  h2 {
-    font-size: 36px;
+  .text-content1 {
+    text-align: center; 
+    margin: 0 auto; 
+    max-width: 600px; 
+    flex: 1;
+  }
+  
+  .text-content1 h1 {
+    font-family: "Volkhov", serif;
     font-weight: bold;
-    color: #333;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #222222;
+    text-align: center; 
+    margin-bottom: 0.5rem;
+  }
+
+  .text-content1 p {
+    font-family: 'Poppins', sans-serif;
+    color: #666666;
+    font-size: 15px;
+    text-align: center;
+    word-wrap: break-word;
+    line-height: 1.4;
+    margin: 0; 
+    padding: 0; 
   }
   
-  .container2  p {
-    font-size: 18px;
-    color: #666;
-    margin-bottom: 20px;
+  .icon1 {
+    flex-shrink: 0; 
+    margin-left: 1.8rem;
   }
+  
+  .icon1 img {
+    max-width: 100%;
+      display: block;
+  }
+  
   
   .card-container2 {
     display: flex;
     justify-content: space-between;
-    margin-top: 40px;
-  }
+    gap: 2rem; 
+    margin-top: -40px; 
+    margin-left: -40px;
+    position: relative;
+  } 
+  
   
   .card2 {
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    padding: 30px;
-    text-align: center;
-    width: 30%;
-  }
-  
-  .card2 img {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: -webkit-box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
+    box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);;
+    padding: 1.5rem; 
     width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 10px 10px 0 0;
-    margin-bottom: 20px;
+    max-width: 320px; 
+    box-sizing: border-box;
   }
-  
-  .card2 h3 {
-    font-size: 24px;
-    font-weight: bold;
-    color: #333;
+  .card2 img {
+    width: 35px; 
+    height: 35px; 
     margin-bottom: 10px;
   }
   
-  .card2 p {
-    font-size: 18px;
-    font-weight: bold;
-    color: #ff9900;
-    margin-bottom: 20px;
+  .card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    
   }
   
-  .details {
+  .card2 h2 {
+    font-size: 1.25rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #222222;
+    margin-bottom: 6px;
+    
+     }
+  
+  .card2 p {
+    font-size: 0.6rem;
+    font-family: 'Poppins', sans-serif;
+    color: #666666;
+      margin: 0; 
+      line-height: 1.5;
+  }
+  
+    .details {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -538,6 +717,10 @@ color:#FA7436
   }
 
 
+
+
+
+  
 
   .container3 {
     max-width: 1200px;

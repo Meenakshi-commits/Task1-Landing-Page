@@ -853,63 +853,6 @@ card1 .title-and-rating h3 {
 
 
 
-  .container4 {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 40px;
-    text-align: center;
-  }
-  
-  h2 {
-    font-family: "Volkhov", serif;
-    font-size: 36px;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 40px;
-    font-family: ;
-  }
-
-  h2 .high {
-    color: #FA7436;
-  }
-  
-  .blog-posts {
-    font-family: 'Poppins', sans-serif;
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .blog-post {
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    padding: 10px;
-    text-align: center;
-    width: 23%;
-  }
-  
-  .blog-post img {
-    width: 100%;
-    height: 160px;
-    object-fit: cover;
-    border-radius: 5px 5px 0 0;
-    margin-bottom: 20px;
-  }
-  
-  .blog-post h3 {
-    font-size: 13px;
-    font-weight: bold;
-    color: #333;
-    text-align: left;
-    margin-bottom: 10px;
-  }
-  
-  .blog-post p {
-    font-size: 10px;
-    color: #666;
-    text-align: left;
-  }
-
 
 .container5 {
     background-color: #FF6600; /* Orange background */

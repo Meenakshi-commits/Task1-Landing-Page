@@ -882,3 +882,77 @@ card1 .title-and-rating h3 {
     width: 100%;
     height: auto;
 }
+
+
+.trabook-section1 {
+  background-color: #f0f0f0;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.logo1 {
+  width: 200px; /* Adjust the width as needed */
+  margin-right: 20px;
+}
+
+.content6 {
+  flex-grow: 1;
+}
+
+.content6 h2 {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.social-icons {
+  display: flex;
+  margin-top: 10px;
+}
+
+.social-icons a {
+  margin-right: 10px;
+  color: #333;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  color: #007bff;
+}
+
+.social-icons i {
+  font-size: 24px;
+}
+.footer-section {
+  background-color: #f0f0f0;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between; /* Added to distribute space between columns */
+}
+
+.footer-column {
+  flex: 1; /* Flex: 1 makes each column take up equal space */
+}
+
+.footer-column h4 {
+  margin: 0 0 10px 0;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column li {
+  margin-bottom: 5px;
+}
+
+.footer-column a {
+  text-decoration: none;
+  color: #333;
+}
+
+.footer-column a:hover {
+  color: #007bff;
+}

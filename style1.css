@@ -910,100 +910,61 @@ card1 .title-and-rating h3 {
     text-align: left;
   }
 
-  .header1 {
-    background-color: #FF6B00;
-    color: #fff;
-    padding: 10px;
-  }
-  
-  .subscribe-banner {
+
+.container5 {
+    background-color: #FF6600; /* Orange background */
+    
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-  
-  .banner-content {
-    flex: 1;
-    padding: 20px;
-  }
-  
-  .banner-content h3 {
-    font-size: 24px;
+    max-width: 800px;
+    width: 100%;
+}
+
+.content5 {
+    text-align: center;
+    color: #fff; /* White text */
+}
+
+.content5 h2 {
+  color: #fff;
     margin-bottom: 20px;
-  }
-  
-  .banner-content form {
+}
+
+.content5 form {
     display: flex;
-  }
-  
-  .banner-content input[type="email"] {
-    flex: 1;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content5 input[type="email"] {
     padding: 10px;
     border: none;
-    border-radius: 5px 0 0 5px;
-  }
-  
-  .banner-content button {
-    background-color: #fff;
-    color: #FF6B00;
-    border: none;
-    border-radius: 0 5px 5px 0;
-    padding: 10px 20px;
-    cursor: pointer;
-  }
-  
-  .banner-image {
-    flex: 1;
-    text-align: right;
-    padding: 20px;
-  }
-  
-  footer {
-    background-color: #F5F5F5;
-    padding: 40px;
-  }
-  
-  .container5 {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  .footer-section {
-    flex: 1;
-    margin: 0 20px;
-  }
-  
-  .footer-section h3 {
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 20px;
-  }
-  
-  .footer-section ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .footer-section ul li {
+    border-radius: 5px;
     margin-bottom: 10px;
-  }
-  
-  .footer-section ul li a {
-    color:   
-   #333;
-    text-decoration: none;
-  }
-  
-  .social-icons {
-    margin-top: 20px;
-  }
-  
-  .social-icons a {
-    color: #333;
-    margin-right: 10px;
-  }
-  
-  .copyright {
-    text-align: center;
-    margin-top: 20px;
-  }
+    padding-right: 120px;
+    border-right: 1px solid #ccc; /* Ensure there is a division between input and button */
+  box-sizing: border-box; /
+}
+
+
+.content5 button {
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #FF6600;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.palm-trees {
+    width: 200px; /* Adjust the width as needed */
+}
+
+.palm-trees img {
+    width: 100%;
+    height: auto;
+}

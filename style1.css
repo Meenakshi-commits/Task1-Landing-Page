@@ -492,14 +492,15 @@ color:#FA7436
 }
 .card1 .card-details {
   padding: 1rem;
-}.card1 .title-and-rating {
+}
+.card1 .title-and-rating {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 0.5rem;
 }
 card1 .title-and-rating h3 {
-  font-size: 0.5rem;
+  font-size: 0.3rem;
   font-weight: bold;
   color: #222222;
   margin: 0;
@@ -608,139 +609,158 @@ card1 .title-and-rating h3 {
 
 
 /*container2*/
-
-  .container2 {
-    display: flex;
+/* Container Styling */
+.container2 {
+  display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%; 
   max-width: 1400px; 
   padding: 1rem 2rem 1rem 2rem;
-  }
-  .top-card1 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2rem; 
-    background-color: #f9f9f9;
-    border-radius: 4px;
-    width: 100%; 
-    max-width: 1200px; 
-    margin: 3rem auto; 
-    overflow: hidden; 
-    
-  }
+  background-color: #f9f9f9;
+
+  position: relative;
+}
+
+.top-card1 {
+  position: relative;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.top-card1 .text-content1 h2 {
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #222;
+}
+
+.top-card1 .text-content1 p {
+  color: #666;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.highlight {
+  color: #FA7436;
+}
+
+.arrow-buttons {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.arrow {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
   
-  .text-content1 {
-    text-align: center; 
-    margin: 0 auto; 
-    max-width: 600px; 
-    flex: 1;
-  }
-  
-  .text-content1 h1 {
-    font-family: "Volkhov", serif;
-    font-weight: bold;
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: #222222;
-    text-align: center; 
-    margin-bottom: 0.5rem;
+}
+.card-container2 {
+
+  display: flex;
+  justify-content: space-between;
+  gap: 2px
+  margin-top: -40px;
+  margin-left: -40px;
+  position: relative;
+  flex-wrap: nowrap;
+  overflow-x: auto;
   }
 
-  .text-content1 p {
-    font-family: 'Poppins', sans-serif;
-    color: #666666;
-    font-size: 15px;
-    text-align: center;
-    word-wrap: break-word;
-    line-height: 1.4;
-    margin: 0; 
-    padding: 0; 
-  }
-  
-  .icon1 {
-    flex-shrink: 0; 
-    margin-left: 1.8rem;
-  }
-  
-  .icon1 img {
-    max-width: 100%;
-      display: block;
-  }
-  
-  
-  .card-container2 {
-    display: flex;
-    justify-content: space-between;
-    gap: 2rem; 
-    margin-top: -40px; 
-    margin-left: -40px;
-    position: relative;
-  } 
-  
-  
+.card2 {
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 0.1rem;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #f9f9f9;
+  border-radius: 4px;
+  padding: 0.5rem;
+  width: 200px;
+  position: relative;
+
+ 
+}
+
+.card2 img {
+  position: relative; 
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  overflow: hidden;
+  display: block;
+  width: 80%
+  height: 50px; /* Reduced height for the image */
+  object-fit: cover; /* Maintains aspect ratio without distortion */
+}
+
+.card-content {
+  padding: 8px;
+}
+
+.card-content h3 {
+  font-size: 0.9rem;
+  margin-bottom: 8px;
+  color: #333;
+  flex-grow: 1;
+}
+.card-content p {
+  font-size: 1em;
+  color: #e67e22; /* Or any color for the price */
+  margin: 0;
+  text-align: right; /* Ensures the price is aligned to the right */
+}
+
+.price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.details {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.details span {
+  display: flex;
+  align-items: center;
+  gap: 2px; /* Adds space between the icon and text */
+  font-size: 0.4rem;
+  color: #555;
+  flex-grow: 1
+}
+.details span img {
+  width: 12px;
+  height: 12px;
+  margin-left: 2px; /* Small gap between stars */
+}
+
+.rating2 img {
+  width: 10px;
+  height: 10px;
+  margin-right: 2px; /* Small gap between stars */
+}
+
+
+
   .card2 {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start; /
-    background-color: #f9f9f9;
-    border-radius: 12px;
-    box-shadow: -webkit-box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
-    -moz-box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
-    box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);;
-    padding: 1.5rem; 
-    width: 100%;
-    max-width: 320px; 
-    box-sizing: border-box;
-  }
-  .card2 img {
-    width: 35px; 
-    height: 35px; 
-    margin-bottom: 10px;
-  }
-  
-  .card-content {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start; 
+    width: 80%; /* Full width for smaller screens */
     
-  }
-  
-  .card2 h2 {
-    font-size: 1.25rem;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    color: #222222;
-    margin-bottom: 6px;
-    
-     }
-  
-  .card2 p {
-    font-size: 0.6rem;
-    font-family: 'Poppins', sans-serif;
-    color: #666666;
-      margin: 0; 
-      line-height: 1.5;
-  }
-  
-    .details {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .details i {
-    color: #666;
-    margin-right: 5px;
-  }
-  
-  .rating2 {
-    color: #ff9900;
-  }
-  
-  .rating2 i {
-    margin-right: 2px;
   }
 
 
